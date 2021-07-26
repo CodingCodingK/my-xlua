@@ -1,0 +1,54 @@
+local calc_mt = {
+    __index = {
+        Add = function(self, a, b)
+            return (a + b) * self.Mult
+        end,
+
+        get_Item = function(self, index)
+            return self.list[index + 1]
+        end,
+
+        set_Item = function(self, index, value)
+            self.list[index + 1] = value
+            self:notify({name = index, value = value})
+        end,
+
+        add_PropertyChanged = function(self, delegate)
+            if self.notifylist == nil then
+                self.notifylist = {}
+            end
+            table.insert(self.notifylist, delegate)
+            print('add',delegate)
+        end,
+
+        remove_PropertyChanged = function(self, delegate)
+            for i=1, #self.notifylist do
+                if CS.System.Object.Equals(self.notifylist[i], delegate) then
+                    table.remove(self.notifylist, i)
+                    break
+                end
+            end
+            print('remove', delegate)
+        end,
+
+        notify = function(self, evt)
+            if self.notifylist ~= nil then
+                for i=1, #self.notifylist do
+                    self.notifylist[i](self, evt)
+                end
+            end
+        end,
+    }
+}
+
+--Lua 查找一个表元素时的规则，其实就是如下 3 个步骤:
+--
+--1.在表中查找，如果找到，返回该元素，找不到则继续
+--2.判断该表是否有元表，如果没有元表，返回 nil，有元表则继续。
+--3.判断元表有没有 __index 方法，如果 __index 方法为 nil，则返回 nil；如果 __index 方法是一个表，则重复 1、2、3；如果 __index 方法是一个函数，则返回该函数的返回值。
+Calc = {
+    New = function (mult, ...)
+        print(...)
+        return setmetatable({Mult = mult, list = {'aaaa','bbbb','cccc'}}, calc_mt)
+    end
+}

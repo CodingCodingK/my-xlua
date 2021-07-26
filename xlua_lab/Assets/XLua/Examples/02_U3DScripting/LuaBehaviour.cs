@@ -11,6 +11,7 @@ using System.Collections;
 using System.Collections.Generic;
 using XLua;
 using System;
+using UnityEngine.UI;
 
 namespace XLuaTest
 {

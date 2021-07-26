@@ -1,0 +1,12 @@
+function start()
+    print("lua start...")
+
+    --self:Get("Button").onClick:AddListener(function()
+    --    print("clicked, you input is '" ..InputBox:GetComponent("InputField").text .."'")
+    --end)
+
+    -- 这里看出，lua压根不需要类型转换，就可以调用目标方法接口
+    self.transform:Find("Button").gameObject:GetComponent("Button").onClick:AddListener(function()
+            print("clicked, you input is '" ..InputBox:GetComponent("InputField").text .."'")
+        end)
+end
