@@ -37,8 +37,11 @@ namespace XLua
 				translator.RegisterPushAndGetAndUpdate<XLuaTest.Pedding>(translator.PushXLuaTestPedding, translator.Get, translator.UpdateXLuaTestPedding);
 				translator.RegisterPushAndGetAndUpdate<XLuaTest.MyStruct>(translator.PushXLuaTestMyStruct, translator.Get, translator.UpdateXLuaTestMyStruct);
 				translator.RegisterPushAndGetAndUpdate<XLuaTest.PushAsTableStruct>(translator.PushXLuaTestPushAsTableStruct, translator.Get, translator.UpdateXLuaTestPushAsTableStruct);
+				translator.RegisterPushAndGetAndUpdate<Mine.Pedding>(translator.PushMinePedding, translator.Get, translator.UpdateMinePedding);
+				translator.RegisterPushAndGetAndUpdate<Mine.DIUStruct>(translator.PushMineDIUStruct, translator.Get, translator.UpdateMineDIUStruct);
 				translator.RegisterPushAndGetAndUpdate<Tutorial.TestEnum>(translator.PushTutorialTestEnum, translator.Get, translator.UpdateTutorialTestEnum);
 				translator.RegisterPushAndGetAndUpdate<XLuaTest.MyEnum>(translator.PushXLuaTestMyEnum, translator.Get, translator.UpdateXLuaTestMyEnum);
+				translator.RegisterPushAndGetAndUpdate<Mine.DIUEnum>(translator.PushMineDIUEnum, translator.Get, translator.UpdateMineDIUEnum);
 				translator.RegisterPushAndGetAndUpdate<Tutorial.DerivedClass.TestEnumInner>(translator.PushTutorialDerivedClassTestEnumInner, translator.Get, translator.UpdateTutorialDerivedClassTestEnumInner);
 			
 			}
@@ -771,6 +774,138 @@ namespace XLua
             }
         }
         
+        int MinePedding_TypeID = -1;
+        public void PushMinePedding(RealStatePtr L, Mine.Pedding val)
+        {
+            if (MinePedding_TypeID == -1)
+            {
+			    bool is_first;
+                MinePedding_TypeID = getTypeId(L, typeof(Mine.Pedding), out is_first);
+				
+            }
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 1, MinePedding_TypeID);
+            if (!CopyByValue.Pack(buff, 0, val))
+            {
+                throw new Exception("pack fail fail for Mine.Pedding ,value="+val);
+            }
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out Mine.Pedding val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != MinePedding_TypeID)
+				{
+				    throw new Exception("invalid userdata for Mine.Pedding");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);if (!CopyByValue.UnPack(buff, 0, out val))
+                {
+                    throw new Exception("unpack fail for Mine.Pedding");
+                }
+            }
+			else if (type ==LuaTypes.LUA_TTABLE)
+			{
+			    CopyByValue.UnPack(this, L, index, out val);
+			}
+            else
+            {
+                val = (Mine.Pedding)objectCasters.GetCaster(typeof(Mine.Pedding))(L, index, null);
+            }
+        }
+		
+        public void UpdateMinePedding(RealStatePtr L, int index, Mine.Pedding val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != MinePedding_TypeID)
+				{
+				    throw new Exception("invalid userdata for Mine.Pedding");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  val))
+                {
+                    throw new Exception("pack fail for Mine.Pedding ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int MineDIUStruct_TypeID = -1;
+        public void PushMineDIUStruct(RealStatePtr L, Mine.DIUStruct val)
+        {
+            if (MineDIUStruct_TypeID == -1)
+            {
+			    bool is_first;
+                MineDIUStruct_TypeID = getTypeId(L, typeof(Mine.DIUStruct), out is_first);
+				
+            }
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 25, MineDIUStruct_TypeID);
+            if (!CopyByValue.Pack(buff, 0, val))
+            {
+                throw new Exception("pack fail fail for Mine.DIUStruct ,value="+val);
+            }
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out Mine.DIUStruct val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != MineDIUStruct_TypeID)
+				{
+				    throw new Exception("invalid userdata for Mine.DIUStruct");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);if (!CopyByValue.UnPack(buff, 0, out val))
+                {
+                    throw new Exception("unpack fail for Mine.DIUStruct");
+                }
+            }
+			else if (type ==LuaTypes.LUA_TTABLE)
+			{
+			    CopyByValue.UnPack(this, L, index, out val);
+			}
+            else
+            {
+                val = (Mine.DIUStruct)objectCasters.GetCaster(typeof(Mine.DIUStruct))(L, index, null);
+            }
+        }
+		
+        public void UpdateMineDIUStruct(RealStatePtr L, int index, Mine.DIUStruct val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != MineDIUStruct_TypeID)
+				{
+				    throw new Exception("invalid userdata for Mine.DIUStruct");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  val))
+                {
+                    throw new Exception("pack fail for Mine.DIUStruct ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
         int TutorialTestEnum_TypeID = -1;
 		int TutorialTestEnum_EnumRef = -1;
         
@@ -930,6 +1065,90 @@ namespace XLua
                 if (!CopyByValue.Pack(buff, 0,  (int)val))
                 {
                     throw new Exception("pack fail for XLuaTest.MyEnum ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int MineDIUEnum_TypeID = -1;
+		int MineDIUEnum_EnumRef = -1;
+        
+        public void PushMineDIUEnum(RealStatePtr L, Mine.DIUEnum val)
+        {
+            if (MineDIUEnum_TypeID == -1)
+            {
+			    bool is_first;
+                MineDIUEnum_TypeID = getTypeId(L, typeof(Mine.DIUEnum), out is_first);
+				
+				if (MineDIUEnum_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(Mine.DIUEnum));
+				    MineDIUEnum_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, MineDIUEnum_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, MineDIUEnum_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for Mine.DIUEnum ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, MineDIUEnum_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out Mine.DIUEnum val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != MineDIUEnum_TypeID)
+				{
+				    throw new Exception("invalid userdata for Mine.DIUEnum");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for Mine.DIUEnum");
+                }
+				val = (Mine.DIUEnum)e;
+                
+            }
+            else
+            {
+                val = (Mine.DIUEnum)objectCasters.GetCaster(typeof(Mine.DIUEnum))(L, index, null);
+            }
+        }
+		
+        public void UpdateMineDIUEnum(RealStatePtr L, int index, Mine.DIUEnum val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != MineDIUEnum_TypeID)
+				{
+				    throw new Exception("invalid userdata for Mine.DIUEnum");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for Mine.DIUEnum ,value="+val);
                 }
             }
 			
@@ -1100,6 +1319,18 @@ namespace XLua
 				translator.PushXLuaTestPushAsTableStruct(L, array[index]);
 				return true;
 			}
+			else if (type == typeof(Mine.Pedding[]))
+			{
+			    Mine.Pedding[] array = obj as Mine.Pedding[];
+				translator.PushMinePedding(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(Mine.DIUStruct[]))
+			{
+			    Mine.DIUStruct[] array = obj as Mine.DIUStruct[];
+				translator.PushMineDIUStruct(L, array[index]);
+				return true;
+			}
 			else if (type == typeof(Tutorial.TestEnum[]))
 			{
 			    Tutorial.TestEnum[] array = obj as Tutorial.TestEnum[];
@@ -1110,6 +1341,12 @@ namespace XLua
 			{
 			    XLuaTest.MyEnum[] array = obj as XLuaTest.MyEnum[];
 				translator.PushXLuaTestMyEnum(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(Mine.DIUEnum[]))
+			{
+			    Mine.DIUEnum[] array = obj as Mine.DIUEnum[];
+				translator.PushMineDIUEnum(L, array[index]);
 				return true;
 			}
 			else if (type == typeof(Tutorial.DerivedClass.TestEnumInner[]))
@@ -1190,6 +1427,18 @@ namespace XLua
 				translator.Get(L, obj_idx, out array[array_idx]);
 				return true;
 			}
+			else if (type == typeof(Mine.Pedding[]))
+			{
+			    Mine.Pedding[] array = obj as Mine.Pedding[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(Mine.DIUStruct[]))
+			{
+			    Mine.DIUStruct[] array = obj as Mine.DIUStruct[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
 			else if (type == typeof(Tutorial.TestEnum[]))
 			{
 			    Tutorial.TestEnum[] array = obj as Tutorial.TestEnum[];
@@ -1199,6 +1448,12 @@ namespace XLua
 			else if (type == typeof(XLuaTest.MyEnum[]))
 			{
 			    XLuaTest.MyEnum[] array = obj as XLuaTest.MyEnum[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(Mine.DIUEnum[]))
+			{
+			    Mine.DIUEnum[] array = obj as Mine.DIUEnum[];
 				translator.Get(L, obj_idx, out array[array_idx]);
 				return true;
 			}

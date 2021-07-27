@@ -132,6 +132,64 @@ namespace XLua.CSObjectWrap
 		}
 	}
     
+    public class MineDIUEnumWrap
+    {
+		public static void __Register(RealStatePtr L)
+        {
+		    ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+		    Utils.BeginObjectRegister(typeof(Mine.DIUEnum), L, translator, 0, 0, 0, 0);
+			Utils.EndObjectRegister(typeof(Mine.DIUEnum), L, translator, null, null, null, null, null);
+			
+			Utils.BeginClassRegister(typeof(Mine.DIUEnum), L, null, 3, 0, 0);
+
+            
+            Utils.RegisterObject(L, translator, Utils.CLS_IDX, "E1", Mine.DIUEnum.E1);
+            
+            Utils.RegisterObject(L, translator, Utils.CLS_IDX, "E2", Mine.DIUEnum.E2);
+            
+
+			Utils.RegisterFunc(L, Utils.CLS_IDX, "__CastFrom", __CastFrom);
+            
+            Utils.EndClassRegister(typeof(Mine.DIUEnum), L, translator);
+        }
+		
+		[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int __CastFrom(RealStatePtr L)
+		{
+			ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+			LuaTypes lua_type = LuaAPI.lua_type(L, 1);
+            if (lua_type == LuaTypes.LUA_TNUMBER)
+            {
+                translator.PushMineDIUEnum(L, (Mine.DIUEnum)LuaAPI.xlua_tointeger(L, 1));
+            }
+			
+            else if(lua_type == LuaTypes.LUA_TSTRING)
+            {
+
+			    if (LuaAPI.xlua_is_eq_str(L, 1, "E1"))
+                {
+                    translator.PushMineDIUEnum(L, Mine.DIUEnum.E1);
+                }
+				else if (LuaAPI.xlua_is_eq_str(L, 1, "E2"))
+                {
+                    translator.PushMineDIUEnum(L, Mine.DIUEnum.E2);
+                }
+				else
+                {
+                    return LuaAPI.luaL_error(L, "invalid string for Mine.DIUEnum!");
+                }
+
+            }
+			
+            else
+            {
+                return LuaAPI.luaL_error(L, "invalid lua type for Mine.DIUEnum! Expect number or string, got + " + lua_type);
+            }
+
+            return 1;
+		}
+	}
+    
     public class TutorialDerivedClassTestEnumInnerWrap
     {
 		public static void __Register(RealStatePtr L)

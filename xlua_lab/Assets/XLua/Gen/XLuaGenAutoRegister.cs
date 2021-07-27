@@ -160,11 +160,25 @@ namespace XLua.CSObjectWrap
             translator.DelayWrapLoader(typeof(XLuaTest.FooExtension), XLuaTestFooExtensionWrap.__Register);
         
         
+            translator.DelayWrapLoader(typeof(Mine.Pedding), MinePeddingWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Mine.DIUStruct), MineDIUStructWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Mine.DIUEnum), MineDIUEnumWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Mine.NoGC_DelegateExercise), MineNoGC_DelegateExerciseWrap.__Register);
+        
+        
             translator.DelayWrapLoader(typeof(Tutorial.DerivedClass.TestEnumInner), TutorialDerivedClassTestEnumInnerWrap.__Register);
         
-        
-        
         }
+        
+        
+        
+        
         
         static void Init(LuaEnv luaenv, ObjectTranslator translator)
         {
@@ -175,6 +189,8 @@ namespace XLua.CSObjectWrap
             translator.AddInterfaceBridgeCreator(typeof(System.Collections.IEnumerator), SystemCollectionsIEnumeratorBridge.__Create);
             
             translator.AddInterfaceBridgeCreator(typeof(XLuaTest.IExchanger), XLuaTestIExchangerBridge.__Create);
+            
+            translator.AddInterfaceBridgeCreator(typeof(Mine.IExchanger), MineIExchangerBridge.__Create);
             
             translator.AddInterfaceBridgeCreator(typeof(Tutorial.CSCallLua.ItfD), TutorialCSCallLuaItfDBridge.__Create);
             

@@ -724,5 +724,135 @@ namespace XLua
             return true;
         }
         
+		
+		public static void UnPack(ObjectTranslator translator, RealStatePtr L, int idx, out Mine.Pedding val)
+		{
+		    val = new Mine.Pedding();
+            int top = LuaAPI.lua_gettop(L);
+			
+			if (Utils.LoadField(L, idx, "c"))
+            {
+			    
+                translator.Get(L, top + 1, out val.c);
+				
+            }
+            LuaAPI.lua_pop(L, 1);
+			
+		}
+		
+        public static bool Pack(IntPtr buff, int offset, Mine.Pedding field)
+        {
+            
+            if(!Pack(buff, offset, field.c))
+            {
+                return false;
+            }
+            
+            return true;
+        }
+        public static bool UnPack(IntPtr buff, int offset, out Mine.Pedding field)
+        {
+            field = default(Mine.Pedding);
+            
+            if(!UnPack(buff, offset, out field.c))
+            {
+                return false;
+            }
+            
+            return true;
+        }
+        
+		
+		public static void UnPack(ObjectTranslator translator, RealStatePtr L, int idx, out Mine.DIUStruct val)
+		{
+		    val = new Mine.DIUStruct();
+            int top = LuaAPI.lua_gettop(L);
+			
+			if (Utils.LoadField(L, idx, "a"))
+            {
+			    
+                translator.Get(L, top + 1, out val.a);
+				
+            }
+            LuaAPI.lua_pop(L, 1);
+			
+			if (Utils.LoadField(L, idx, "b"))
+            {
+			    
+                translator.Get(L, top + 1, out val.b);
+				
+            }
+            LuaAPI.lua_pop(L, 1);
+			
+			if (Utils.LoadField(L, idx, "c"))
+            {
+			    
+                translator.Get(L, top + 1, out val.c);
+				
+            }
+            LuaAPI.lua_pop(L, 1);
+			
+			if (Utils.LoadField(L, idx, "e"))
+            {
+			    
+                translator.Get(L, top + 1, out val.e);
+				
+            }
+            LuaAPI.lua_pop(L, 1);
+			
+		}
+		
+        public static bool Pack(IntPtr buff, int offset, Mine.DIUStruct field)
+        {
+            
+            if(!Pack(buff, offset, field.a))
+            {
+                return false;
+            }
+            
+            if(!Pack(buff, offset + 4, field.b))
+            {
+                return false;
+            }
+            
+            if(!Pack(buff, offset + 8, field.c))
+            {
+                return false;
+            }
+            
+            if(!Pack(buff, offset + 24, field.e))
+            {
+                return false;
+            }
+            
+            return true;
+        }
+        public static bool UnPack(IntPtr buff, int offset, out Mine.DIUStruct field)
+        {
+            field = default(Mine.DIUStruct);
+            
+            if(!UnPack(buff, offset, out field.a))
+            {
+                return false;
+            }
+            
+            if(!UnPack(buff, offset + 4, out field.b))
+            {
+                return false;
+            }
+            
+            if(!UnPack(buff, offset + 8, out field.c))
+            {
+                return false;
+            }
+            
+            if(!UnPack(buff, offset + 24, out field.e))
+            {
+                return false;
+            }
+            
+            return true;
+        }
+        
     }
 }
