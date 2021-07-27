@@ -8,6 +8,10 @@ namespace XLuaTest
 {
     public class Coroutine_Runner : MonoBehaviour
     {
+        // private void Start()
+        // {
+        //     this.StartCoroutine()
+        // }
     }
 
 

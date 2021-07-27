@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Mine/Examples/05_NoGC_DelegateForLuaExercise/NoGC.unity
+- path: Assets/Mine/Examples/06_Coroutine/New Scene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
