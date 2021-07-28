@@ -132,6 +132,7 @@
      <Compile Include="Assets\XLua\Gen\XLuaTest_FooExtensionWrap.cs" />
      <Compile Include="Assets\XLua\Gen\System_Collections_IEnumeratorBridge.cs" />
      <Compile Include="Assets\XLua\Gen\XLuaTest_Foo1ChildWrap.cs" />
+     <Compile Include="Assets\Mine\Examples\06_Coroutine\Coroutine_Runner.cs" />
      <Compile Include="Assets\XLua\Examples\09_GenericMethod\GenericMethodExample.cs" />
      <Compile Include="Assets\XLua\Src\InternalGlobals.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_LightWrap.cs" />
@@ -158,18 +159,19 @@
      <Compile Include="Assets\XLua\Gen\Mine_DIUStructWrap.cs" />
      <Compile Include="Assets\XLua\Gen\WrapPusher.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_QuaternionWrap.cs" />
+     <Compile Include="Assets\Mine\Examples\06_Coroutine\Coroutine_TEST.cs" />
      <Compile Include="Assets\XLua\Gen\XLuaTest_InvokeLua_ICalcBridge.cs" />
      <Compile Include="Assets\XLua\Tutorial\CSharpCallLua\CSCallLua.cs" />
-     <Compile Include="Assets\Mine\Examples\06_Coroutine\Coroutine_TEST.cs" />
      <None Include="Assets\XLua\Examples\07_AsyncTest\Resources\async_test.lua.txt" />
      <None Include="Assets\XLua\Tutorial\LoadLuaScript\ByFile\Resources\byfile.lua.txt" />
      <None Include="Assets\Mine\Examples\04_LuaOO\LuaOO.lua.txt" />
-     <None Include="Assets\XLua\Examples\06_Coroutine\Resources\coruntine_test.lua.txt" />
+     <None Include="Assets\XLua\Examples\06_Coroutine\Resources2\coruntine_test.lua.txt" />
      <None Include="Assets\XLua\Resources\xlua\util.lua.txt" />
      <None Include="Assets\Mine\Examples\06_Coroutine\Resources\cs_coroutine.lua.txt" />
      <None Include="Assets\Mine\Examples\02_LuaBehaviour\LuaBehaviourScript.lua.txt" />
      <None Include="Assets\XLua\Resources\perf\profiler.lua.txt" />
      <None Include="Assets\XLua\Gen\link.xml" />
+     <None Include="Assets\Mine\Examples\06_Coroutine\Resources\coruntine_test.lua.txt" />
      <None Include="Assets\Mine\Examples\03_UIEventByLuaBehaviour\UIEvent_button.lua.txt" />
      <None Include="Assets\XLua\Resources\perf\memory.lua.txt" />
      <None Include="Assets\XLua\Examples\03_UIEvent\ButtonInteraction.lua.txt" />
@@ -177,33 +179,33 @@
      <None Include="Assets\XLua\Examples\07_AsyncTest\Resources\message_box.lua.txt" />
      <None Include="Assets\XLua\Resources\tdr\tdr.lua.txt" />
      <None Include="Assets\XLua\CHANGELOG.txt" />
-     <None Include="Assets\XLua\Examples\06_Coroutine\Resources\cs_coroutine.lua.txt" />
+     <None Include="Assets\XLua\Examples\06_Coroutine\Resources2\cs_coroutine.lua.txt" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>D:/github/my-xlua/xlua_lab/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>E:/My Github/my-xlua/xlua_lab/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>D:/github/my-xlua/xlua_lab/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>E:/My Github/my-xlua/xlua_lab/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>D:/github/my-xlua/xlua_lab/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>E:/My Github/my-xlua/xlua_lab/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>D:/github/my-xlua/xlua_lab/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>E:/My Github/my-xlua/xlua_lab/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>D:/github/my-xlua/xlua_lab/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>E:/My Github/my-xlua/xlua_lab/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>D:/github/my-xlua/xlua_lab/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>E:/My Github/my-xlua/xlua_lab/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>D:/github/my-xlua/xlua_lab/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>E:/My Github/my-xlua/xlua_lab/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>D:/github/my-xlua/xlua_lab/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>E:/My Github/my-xlua/xlua_lab/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>D:/github/my-xlua/xlua_lab/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>E:/My Github/my-xlua/xlua_lab/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

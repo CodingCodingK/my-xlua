@@ -1,0 +1,27 @@
+local cs_coroutine = require 'cs_coroutine'
+
+local a = cs_coroutine.start(function()
+    print('---执行协程a---')
+    
+    coroutine.yield(cs_coroutine.start(function()
+        print('---执行协程b于协程a中---')
+        coroutine.yield(CS.UnityEngine.WaitForSeconds(1))
+        print('协程b：等待一秒结束')
+    end))
+    print('---协程b运行结束---')
+
+    while true do
+        coroutine.yield(CS.UnityEngine.WaitForSeconds(1))
+        print('协程a：循环等待一秒结束')
+    end
+    print('---协程a运行结束---')
+end)
+
+-- 下面的代码会和上面的一起执行，类似异步。
+cs_coroutine.start(function()
+    print('---执行协程c，会在5秒后暂停协程a---')
+    coroutine.yield(CS.UnityEngine.WaitForSeconds(5))
+    cs_coroutine.stop(a)
+    print('协程c：协程a执行暂行')
+    print('---协程c运行结束---')
+end)
