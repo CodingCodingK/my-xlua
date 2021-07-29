@@ -162,8 +162,11 @@
      <Compile Include="Assets\Mine\Examples\06_Coroutine\Coroutine_TEST.cs" />
      <Compile Include="Assets\XLua\Gen\XLuaTest_InvokeLua_ICalcBridge.cs" />
      <Compile Include="Assets\XLua\Tutorial\CSharpCallLua\CSCallLua.cs" />
-     <None Include="Assets\XLua\Examples\07_AsyncTest\Resources\async_test.lua.txt" />
+     <Compile Include="Assets\Mine\Examples\07_AsyncTest\AsyncTest.cs" />
+     <Compile Include="Assets\Mine\Examples\07_AsyncTest\MessageBox.cs" />
+     <None Include="Assets\XLua\Examples\07_AsyncTest\Resources2\async_test.lua.txt" />
      <None Include="Assets\XLua\Tutorial\LoadLuaScript\ByFile\Resources\byfile.lua.txt" />
+     <None Include="Assets\Mine\Examples\07_AsyncTest\Resources\async_test.lua.txt" />
      <None Include="Assets\Mine\Examples\04_LuaOO\LuaOO.lua.txt" />
      <None Include="Assets\XLua\Examples\06_Coroutine\Resources2\coruntine_test.lua.txt" />
      <None Include="Assets\XLua\Resources\xlua\util.lua.txt" />
@@ -175,8 +178,9 @@
      <None Include="Assets\Mine\Examples\03_UIEventByLuaBehaviour\UIEvent_button.lua.txt" />
      <None Include="Assets\XLua\Resources\perf\memory.lua.txt" />
      <None Include="Assets\XLua\Examples\03_UIEvent\ButtonInteraction.lua.txt" />
+     <None Include="Assets\Mine\Examples\07_AsyncTest\Resources\message_box.lua.txt" />
      <None Include="Assets\XLua\Examples\02_U3DScripting\LuaTestScript.lua.txt" />
-     <None Include="Assets\XLua\Examples\07_AsyncTest\Resources\message_box.lua.txt" />
+     <None Include="Assets\XLua\Examples\07_AsyncTest\Resources2\message_box.lua.txt" />
      <None Include="Assets\XLua\Resources\tdr\tdr.lua.txt" />
      <None Include="Assets\XLua\CHANGELOG.txt" />
      <None Include="Assets\XLua\Examples\06_Coroutine\Resources2\cs_coroutine.lua.txt" />

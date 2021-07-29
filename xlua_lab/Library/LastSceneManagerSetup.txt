@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/XLua/Examples/07_AsyncTest/AsyncTest.unity
+- path: Assets/Mine/Examples/07_AsyncTest/AsyncTest.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
