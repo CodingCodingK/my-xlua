@@ -1,0 +1,13 @@
+print('luaEnv started.')
+local hotfixCounter = 0
+local button_func = function()
+    hotfixCounter = hotfixCounter + 1
+    xlua.hotfix(CS.Mine.HotfixTEST, 'Update', function(self)
+        self.counter = self.counter + 1
+        if (self.counter % 200) == 0 then
+            print('From Lua hotfixed ' .. self.counter .. ',Clicked Times :' .. hotfixCounter)
+        end
+    end)
+end
+
+CS.UnityEngine.GameObject.Find("Button"):GetComponent("Button").onClick:AddListener(button_func)

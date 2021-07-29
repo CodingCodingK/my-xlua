@@ -69,6 +69,7 @@
 		<type fullname="Mine.DIUStruct" preserve="all"/>
 		<type fullname="Mine.DIUEnum" preserve="all"/>
 		<type fullname="Mine.NoGC_DelegateExercise" preserve="all"/>
+		<type fullname="Mine.HotfixTEST" preserve="all"/>
 		<type fullname="Tutorial.DerivedClass+TestEnumInner" preserve="all"/>
 		
 	</assembly>

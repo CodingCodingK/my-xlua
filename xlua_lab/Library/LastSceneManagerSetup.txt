@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Mine/Examples/07_AsyncTest/AsyncTest.unity
+- path: Assets/XLua/Examples/08_Hotfix/HotfixTest2.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
