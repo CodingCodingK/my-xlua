@@ -179,6 +179,18 @@ namespace XLua.CSObjectWrap
         static void wrapInit1(LuaEnv luaenv, ObjectTranslator translator)
         {
         
+            translator.DelayWrapLoader(typeof(Mine.MyTestClass), MineMyTestClassWrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Mine.MyTestClass1), MineMyTestClass1Wrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Mine.MyTestClass2), MineMyTestClass2Wrap.__Register);
+        
+        
+            translator.DelayWrapLoader(typeof(Mine.MyExtension), MineMyExtensionWrap.__Register);
+        
+        
             translator.DelayWrapLoader(typeof(Tutorial.DerivedClass.TestEnumInner), TutorialDerivedClassTestEnumInnerWrap.__Register);
         
         

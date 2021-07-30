@@ -25,7 +25,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_2020_1_14;UNITY_2020_1;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;HOTFIX_ENABLE;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_2020_1_14;UNITY_2020_1;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;HOTFIX_ENABLE;INJECT_WITHOUT_TOOL;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -58,6 +58,7 @@
      <Compile Include="Assets\XLua\Examples\07_AsyncTest\AsyncTest.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_RendererWrap.cs" />
      <Compile Include="Assets\XLua\Src\TypeExtensions.cs" />
+     <Compile Include="Assets\Mine\Examples\08_Hotfix\HotfixTEST.cs" />
      <Compile Include="Assets\Mine\Examples\07_AsyncTest\AsyncTest.cs" />
      <Compile Include="Assets\XLua\Gen\Mine_PeddingWrap.cs" />
      <Compile Include="Assets\XLua\Src\MethodWarpsCache.cs" />
@@ -78,6 +79,7 @@
      <Compile Include="Assets\XLua\Src\LuaTable.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_AnimationCurveWrap.cs" />
      <Compile Include="Assets\XLua\Src\CodeEmit.cs" />
+     <Compile Include="Assets\Mine\Examples\09_LuaCallCSMethod\TestClass.cs" />
      <Compile Include="Assets\XLua\Gen\XLuaTest_PeddingWrap.cs" />
      <Compile Include="Assets\XLua\Gen\XLuaTest_MyStructWrap.cs" />
      <Compile Include="Assets\XLua\Tutorial\LoadLuaScript\ByFile\ByFile.cs" />
@@ -98,6 +100,7 @@
      <Compile Include="Assets\XLua\Tutorial\LoadLuaScript\ByString\ByString.cs" />
      <Compile Include="Assets\XLua\Examples\08_Hotfix\StatefullTest.cs" />
      <Compile Include="Assets\XLua\Src\CopyByValue.cs" />
+     <Compile Include="Assets\XLua\Gen\Mine_MyExtensionWrap.cs" />
      <Compile Include="Assets\XLua\Gen\XLuaTest_BaseTestWrap.cs" />
      <Compile Include="Assets\XLua\Src\ObjectPool.cs" />
      <Compile Include="Assets\XLua\Examples\09_GenericMethod\Foo.cs" />
@@ -106,6 +109,7 @@
      <Compile Include="Assets\XLua\Gen\UnityEngine_TimeWrap.cs" />
      <Compile Include="Assets\XLua\Src\DelegateBridge.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_ParticleSystemWrap.cs" />
+     <Compile Include="Assets\Mine\Examples\11_RawObj\RawObjTest.cs" />
      <Compile Include="Assets\XLua\Examples\08_Hotfix\HotfixTest2.cs" />
      <Compile Include="Assets\XLua\Gen\DelegatesGensBridge.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_GameObjectWrap.cs" />
@@ -125,6 +129,7 @@
      <Compile Include="Assets\XLua\Gen\UnityEngine_Vector3Wrap.cs" />
      <Compile Include="Assets\Mine\Examples\04_LuaOO\InvokeLua.cs" />
      <Compile Include="Assets\XLua\Examples\08_Hotfix\HotfixTest.cs" />
+     <Compile Include="Assets\XLua\Gen\Mine_MyTestClass2Wrap.cs" />
      <Compile Include="Assets\XLua\Src\GenAttributes.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_WaitForSecondsWrap.cs" />
      <Compile Include="Assets\XLua\Src\Utils.cs" />
@@ -139,6 +144,8 @@
      <Compile Include="Assets\XLua\Src\InternalGlobals.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_LightWrap.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_BoundsWrap.cs" />
+     <Compile Include="Assets\Mine\Examples\09_LuaCallCSMethod\LuaCallCSMethod.cs" />
+     <Compile Include="Assets\XLua\Gen\Mine_HotfixTESTWrap.cs" />
      <Compile Include="Assets\XLua\Examples\11_RawObject\RawObjectTest.cs" />
      <Compile Include="Assets\XLua\Gen\XLuaGenAutoRegister.cs" />
      <Compile Include="Assets\XLua\Tutorial\LuaCallCSharp\LuaCallCs.cs" />
@@ -155,17 +162,18 @@
      <Compile Include="Assets\XLua\Gen\Mine_IExchangerBridge.cs" />
      <Compile Include="Assets\XLua\Gen\System_Collections_Generic_List_1_System_Int32_Wrap.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_TransformWrap.cs" />
+     <Compile Include="Assets\XLua\Gen\Mine_MyTestClass1Wrap.cs" />
      <Compile Include="Assets\XLua\Examples\10_SignatureLoader\SignatureLoaderTest.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_ColorWrap.cs" />
      <Compile Include="Assets\XLua\Examples\12_ReImplementInLua\ReImplementInLua.cs" />
+     <Compile Include="Assets\XLua\Gen\Mine_MyTestClassWrap.cs" />
      <Compile Include="Assets\XLua\Gen\Mine_DIUStructWrap.cs" />
      <Compile Include="Assets\XLua\Gen\WrapPusher.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_QuaternionWrap.cs" />
      <Compile Include="Assets\Mine\Examples\06_Coroutine\Coroutine_TEST.cs" />
      <Compile Include="Assets\XLua\Gen\XLuaTest_InvokeLua_ICalcBridge.cs" />
      <Compile Include="Assets\XLua\Tutorial\CSharpCallLua\CSCallLua.cs" />
-     <Compile Include="Assets\Mine\Examples\08_Hotfix\HotfixTEST.cs" />
-     <Compile Include="Assets\XLua\Gen\Mine_HotfixTESTWrap.cs" />
+     <Compile Include="Assets\Mine\Examples\12_ReImplementInLua\ReImplementInLua.cs" />
      <None Include="Assets\XLua\Examples\07_AsyncTest\Resources2\async_test.lua.txt" />
      <None Include="Assets\XLua\Tutorial\LoadLuaScript\ByFile\Resources\byfile.lua.txt" />
      <None Include="Assets\Mine\Examples\07_AsyncTest\Resources\async_test.lua.txt" />
@@ -179,7 +187,6 @@
      <None Include="Assets\XLua\Gen\link.xml" />
      <None Include="Assets\Mine\Examples\06_Coroutine\Resources\coruntine_test.lua.txt" />
      <None Include="Assets\Mine\Examples\03_UIEventByLuaBehaviour\UIEvent_button.lua.txt" />
-     <None Include="Assets\XLua\Gen\Resources\hotfix_id_map.lua.txt" />
      <None Include="Assets\XLua\Resources\perf\memory.lua.txt" />
      <None Include="Assets\XLua\Examples\03_UIEvent\ButtonInteraction.lua.txt" />
      <None Include="Assets\Mine\Examples\07_AsyncTest\Resources\message_box.lua.txt" />
@@ -189,31 +196,31 @@
      <None Include="Assets\XLua\CHANGELOG.txt" />
      <None Include="Assets\XLua\Examples\06_Coroutine\Resources2\cs_coroutine.lua.txt" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>D:/github/my-xlua/xlua_lab/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>E:/My Github/my-xlua/xlua_lab/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>D:/github/my-xlua/xlua_lab/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>E:/My Github/my-xlua/xlua_lab/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>D:/github/my-xlua/xlua_lab/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>E:/My Github/my-xlua/xlua_lab/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>D:/github/my-xlua/xlua_lab/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>E:/My Github/my-xlua/xlua_lab/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>D:/github/my-xlua/xlua_lab/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>E:/My Github/my-xlua/xlua_lab/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>D:/github/my-xlua/xlua_lab/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>E:/My Github/my-xlua/xlua_lab/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>D:/github/my-xlua/xlua_lab/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>E:/My Github/my-xlua/xlua_lab/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>D:/github/my-xlua/xlua_lab/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>E:/My Github/my-xlua/xlua_lab/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>D:/github/my-xlua/xlua_lab/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>E:/My Github/my-xlua/xlua_lab/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

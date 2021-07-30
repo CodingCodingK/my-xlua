@@ -70,6 +70,10 @@
 		<type fullname="Mine.DIUEnum" preserve="all"/>
 		<type fullname="Mine.NoGC_DelegateExercise" preserve="all"/>
 		<type fullname="Mine.HotfixTEST" preserve="all"/>
+		<type fullname="Mine.MyTestClass" preserve="all"/>
+		<type fullname="Mine.MyTestClass1" preserve="all"/>
+		<type fullname="Mine.MyTestClass2" preserve="all"/>
+		<type fullname="Mine.MyExtension" preserve="all"/>
 		<type fullname="Tutorial.DerivedClass+TestEnumInner" preserve="all"/>
 		
 	</assembly>

@@ -583,7 +583,7 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
-    1: HOTFIX_ENABLE
+    1: HOTFIX_ENABLE;INJECT_WITHOUT_TOOL
   platformArchitecture: {}
   scriptingBackend: {}
   il2cppCompilerConfiguration: {}

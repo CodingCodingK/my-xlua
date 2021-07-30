@@ -80,6 +80,7 @@ namespace XLuaTest
         public static void PlainExtension(this Foo1Parent a)
         {
             Debug.Log("PlainExtension");
+            //Debug.Log(string.Format("Mine<{0}>", a.GetType())); -- result: XLuaTEST.Foo1Child
         }
 
         public static T Extension1<T>(this T a) where T : Foo1Parent
