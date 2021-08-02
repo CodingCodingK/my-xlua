@@ -1,0 +1,30 @@
+-- 例子2：struct映射到table改造
+-- PushAsTableStruct传送到lua侧将会是table，例子里头还为这个table添加了一个成员方法SwapXY，静态方法Print，打印格式化，以及构造函数
+
+local mt = {
+    __index = {
+        SwapXY = function(o) --成员函数
+            o.x, o.y = o.y, o.x
+        end
+    },
+
+    __tostring = function(o) --打印格式化函数
+        return string.format('struct { %d, %d}', o.x, o.y)
+    end,
+}
+
+xlua.setmetatable(CS.Mine.PushAsTableStruct, mt)
+
+local PushAsTableStruct = {
+    Print = function(o) --静态函数,注意，和构造函数不放在一起！
+        print(o.x, o.y)
+    end
+}
+
+setmetatable(PushAsTableStruct, {
+    __call = function(_, x, y) --构造函数
+        return setmetatable({x = x, y = y}, mt)
+    end
+})
+
+xlua.setclass(CS.Mine, 'PushAsTableStruct', PushAsTableStruct)

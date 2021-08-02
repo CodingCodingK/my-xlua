@@ -39,6 +39,7 @@ namespace XLua
 				translator.RegisterPushAndGetAndUpdate<XLuaTest.PushAsTableStruct>(translator.PushXLuaTestPushAsTableStruct, translator.Get, translator.UpdateXLuaTestPushAsTableStruct);
 				translator.RegisterPushAndGetAndUpdate<Mine.Pedding>(translator.PushMinePedding, translator.Get, translator.UpdateMinePedding);
 				translator.RegisterPushAndGetAndUpdate<Mine.DIUStruct>(translator.PushMineDIUStruct, translator.Get, translator.UpdateMineDIUStruct);
+				translator.RegisterPushAndGetAndUpdate<Mine.PushAsTableStruct>(translator.PushMinePushAsTableStruct, translator.Get, translator.UpdateMinePushAsTableStruct);
 				translator.RegisterPushAndGetAndUpdate<Tutorial.TestEnum>(translator.PushTutorialTestEnum, translator.Get, translator.UpdateTutorialTestEnum);
 				translator.RegisterPushAndGetAndUpdate<XLuaTest.MyEnum>(translator.PushXLuaTestMyEnum, translator.Get, translator.UpdateXLuaTestMyEnum);
 				translator.RegisterPushAndGetAndUpdate<Mine.DIUEnum>(translator.PushMineDIUEnum, translator.Get, translator.UpdateMineDIUEnum);
@@ -906,6 +907,69 @@ namespace XLua
             }
         }
         
+        int MinePushAsTableStruct_TypeID = -1;
+        public void PushMinePushAsTableStruct(RealStatePtr L, Mine.PushAsTableStruct val)
+        {
+            if (MinePushAsTableStruct_TypeID == -1)
+            {
+			    bool is_first;
+                MinePushAsTableStruct_TypeID = getTypeId(L, typeof(Mine.PushAsTableStruct), out is_first);
+				
+            }
+			
+			
+			LuaAPI.xlua_pushcstable(L, 2, MinePushAsTableStruct_TypeID);
+			
+			LuaAPI.xlua_pushasciistring(L, "x");
+			LuaAPI.xlua_pushinteger(L, val.x);
+			LuaAPI.lua_rawset(L, -3);
+			
+			LuaAPI.xlua_pushasciistring(L, "y");
+			LuaAPI.xlua_pushinteger(L, val.y);
+			LuaAPI.lua_rawset(L, -3);
+			
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out Mine.PushAsTableStruct val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != MinePushAsTableStruct_TypeID)
+				{
+				    throw new Exception("invalid userdata for Mine.PushAsTableStruct");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);if (!CopyByValue.UnPack(buff, 0, out val))
+                {
+                    throw new Exception("unpack fail for Mine.PushAsTableStruct");
+                }
+            }
+			else if (type ==LuaTypes.LUA_TTABLE)
+			{
+			    CopyByValue.UnPack(this, L, index, out val);
+			}
+            else
+            {
+                val = (Mine.PushAsTableStruct)objectCasters.GetCaster(typeof(Mine.PushAsTableStruct))(L, index, null);
+            }
+        }
+		
+        public void UpdateMinePushAsTableStruct(RealStatePtr L, int index, Mine.PushAsTableStruct val)
+        {
+		    
+			if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TTABLE)
+            {
+			    return;
+			}
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
         int TutorialTestEnum_TypeID = -1;
 		int TutorialTestEnum_EnumRef = -1;
         
@@ -1331,6 +1395,12 @@ namespace XLua
 				translator.PushMineDIUStruct(L, array[index]);
 				return true;
 			}
+			else if (type == typeof(Mine.PushAsTableStruct[]))
+			{
+			    Mine.PushAsTableStruct[] array = obj as Mine.PushAsTableStruct[];
+				translator.PushMinePushAsTableStruct(L, array[index]);
+				return true;
+			}
 			else if (type == typeof(Tutorial.TestEnum[]))
 			{
 			    Tutorial.TestEnum[] array = obj as Tutorial.TestEnum[];
@@ -1436,6 +1506,12 @@ namespace XLua
 			else if (type == typeof(Mine.DIUStruct[]))
 			{
 			    Mine.DIUStruct[] array = obj as Mine.DIUStruct[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(Mine.PushAsTableStruct[]))
+			{
+			    Mine.PushAsTableStruct[] array = obj as Mine.PushAsTableStruct[];
 				translator.Get(L, obj_idx, out array[array_idx]);
 				return true;
 			}

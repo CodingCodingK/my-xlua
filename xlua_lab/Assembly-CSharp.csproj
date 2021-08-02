@@ -101,6 +101,7 @@
      <Compile Include="Assets\XLua\Examples\08_Hotfix\StatefullTest.cs" />
      <Compile Include="Assets\XLua\Src\CopyByValue.cs" />
      <Compile Include="Assets\XLua\Gen\Mine_MyExtensionWrap.cs" />
+     <Compile Include="Assets\Mine\Examples\12_ReImplementInLua\ReImplementInLua.cs" />
      <Compile Include="Assets\XLua\Gen\XLuaTest_BaseTestWrap.cs" />
      <Compile Include="Assets\XLua\Src\ObjectPool.cs" />
      <Compile Include="Assets\XLua\Examples\09_GenericMethod\Foo.cs" />
@@ -173,7 +174,6 @@
      <Compile Include="Assets\Mine\Examples\06_Coroutine\Coroutine_TEST.cs" />
      <Compile Include="Assets\XLua\Gen\XLuaTest_InvokeLua_ICalcBridge.cs" />
      <Compile Include="Assets\XLua\Tutorial\CSharpCallLua\CSCallLua.cs" />
-     <Compile Include="Assets\Mine\Examples\12_ReImplementInLua\ReImplementInLua.cs" />
      <None Include="Assets\XLua\Examples\07_AsyncTest\Resources2\async_test.lua.txt" />
      <None Include="Assets\XLua\Tutorial\LoadLuaScript\ByFile\Resources\byfile.lua.txt" />
      <None Include="Assets\Mine\Examples\07_AsyncTest\Resources\async_test.lua.txt" />
@@ -192,9 +192,11 @@
      <None Include="Assets\Mine\Examples\07_AsyncTest\Resources\message_box.lua.txt" />
      <None Include="Assets\XLua\Examples\02_U3DScripting\LuaTestScript.lua.txt" />
      <None Include="Assets\XLua\Examples\07_AsyncTest\Resources2\message_box.lua.txt" />
+     <None Include="Assets\Mine\Examples\12_ReImplementInLua\Resources\ReImplementPushAsTableStruct.lua.txt" />
      <None Include="Assets\XLua\Resources\tdr\tdr.lua.txt" />
      <None Include="Assets\XLua\CHANGELOG.txt" />
      <None Include="Assets\XLua\Examples\06_Coroutine\Resources2\cs_coroutine.lua.txt" />
+     <None Include="Assets\Mine\Examples\12_ReImplementInLua\Resources\ReImplementVector3.lua.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>E:/My Github/my-xlua/xlua_lab/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

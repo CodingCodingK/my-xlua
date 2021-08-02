@@ -120,7 +120,7 @@ namespace XLuaTest
 
             luaenv.DoString(@"
             print('--------------from csharp---------------------')
-            assert(type(from_cs) == 'table')
+            assert(type(from_cs) == 'table','A')
             print(from_cs)
             CS.XLuaTest.PushAsTableStruct.Print(from_cs)
             from_cs:SwapXY()
@@ -128,7 +128,7 @@ namespace XLuaTest
 
             print('--------------from lua---------------------')
             local from_lua = CS.XLuaTest.PushAsTableStruct(4, 5)
-            assert(type(from_lua) == 'table')
+            assert(type(from_lua) == 'table','B')
             print(from_lua)
             CS.XLuaTest.PushAsTableStruct.Print(from_lua)
             from_lua:SwapXY()
